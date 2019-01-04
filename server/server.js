@@ -28,9 +28,10 @@ io.on("connection", (socket) => {
   // io.emit emits an event to every connection
   //================================================//
 
-  socket.on("createMessage", (message) => {
+  socket.on("createMessage", (message, callback) => {
     console.log("createMessage", message);
     io.emit("newMessage", generateMessage(message.from, message.text));
+    callback("This is from the server");
   });
 
   socket.on("disconnect", () => {
@@ -41,5 +42,3 @@ io.on("connection", (socket) => {
 server.listen(port, () => {
   console.log(`App started on port ${port}`);
 });
-
-//module.exports = {app};
