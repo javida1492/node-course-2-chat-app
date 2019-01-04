@@ -23,14 +23,24 @@ io.on("connection", (socket) => {
     createdAt: 123
   });*/
 
-  socket.emit("newMessage", {
+  /*socket.emit("newMessage", {
     from: "Uri",
     text: "Is this a good trade?",
     createdAt: 123123
-  });
+  });*/
+
+  //================================================//
+  // socket.emit emits an event to a single connection
+  // io.emit emits an event to every connection
+  //================================================//
 
   socket.on("createMessage", (message) => {
     console.log("createMessage", message);
+    io.emit("newMessage", {
+      from: message.from,
+      text: message.text,
+      createdAt: new Date().getTime()
+    });
   });
 
   /*(socket.on("createEmail", (newEmail) => {
