@@ -13,3 +13,7 @@ A simple real-time web chat application with a client-side companion built using
 * [nodemon](https://www.npmjs.com/package/nodemon)
 * [mocha](https://www.npmjs.com/package/mocha) (for testing)
 * [JestJS/expect](https://www.npmjs.com/package/expect)
+
+[Chat1](https://github.com/javida1492/simple-chat-app/blob/master/chat1.png)
+[Chat2](https://github.com/javida1492/simple-chat-app/blob/master/chat2.png)
+[Chat3](https://github.com/javida1492/simple-chat-app/blob/master/chat1.png)
