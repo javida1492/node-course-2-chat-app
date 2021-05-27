@@ -1,6 +1,6 @@
 ## Real Time Web Chat Application ##
 
-A simple real-time web chat application with a client-side companion built using the following tech:
+A real-time web chat application with a client-side companion built using the following tech:
 
 * ES6
 * HTML5
