@@ -1,5 +1,7 @@
 ## Real Time Web Chat Application ##
 
+https://rt-web-chat.herokuapp.com/
+
 A real-time web chat application with a client-side companion built using the following tech:
 
 * ES6
